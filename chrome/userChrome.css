@@ -18,7 +18,7 @@
 #nav-bar {
 	order: 0;
 	border: none !important;
-	padding: 12px 0 11px 0px !important;
+	padding: 12px 0 11px 10px !important;
 	background-color: transparent !important;
 }
 
@@ -60,7 +60,7 @@ findbar {
 	border-radius: 0 0 0 6px;
 	padding: 0 0 0 3px !important;
 	transition-property: margin-right, visibility !important;
-	
+
 	&:where([hidden]) {
 		margin-right: -266px !important;
 	}
@@ -278,25 +278,25 @@ textarea {
 .urlbarView-row {
 	border-radius: 7px !important;
 	margin-inline: 7px;
-	
+
 	&[row-selectable]:not([selected]):hover {
 		color: var(--urlbarView-highlight-color);
-		
+
 		.urlbarView-url {
 			color: inherit !important;
 		}
 	}
-	
+
 	&:not([type=tip], [type=dynamic]) {
 		:root:not([uidensity=compact]) & {
 			height: 22px !important;
 			min-height: 22px !important;
 		}
 	}
-	
+
 	&[type=tip] {
 		padding: 0 !important;
-	
+
 		> .urlbarView-row-inner,
 		.urlbarView-results[wrap] > & > .urlbarView-button {
 			margin: 0 !important;
@@ -313,7 +313,7 @@ textarea {
 		width: 24px !important;
 		height: 24px !important;
 	}
-	
+
 	&[rich-suggestion]>.urlbarView-row-inner>.urlbarView-row-body {
 		> :is(.urlbarView-row-body-description, .urlbarView-row-body-bottom) {
 			margin-bottom: 2px;
@@ -328,7 +328,7 @@ textarea {
 	>.urlbarView-row-inner>.urlbarView-no-wrap>.urlbarView-favicon {
 		width: 14px !important;
 		height: 14px !important;
-		
+
 		.urlbarView-row:hover & {
 			fill: var(--urlbarView-highlight-color);
 		}
@@ -367,10 +367,10 @@ textarea {
 		color: var(--neptune-urlbar-View-switch-background) !important;
 		background-color: transparent !important;
 	}
-	
+
 	&:not(:empty):not(.urlbarView-button-menu) {
 		color: light-dark(#000, #fff) !important;
-		
+
 		&:hover {
 			color: var(--neptune-urlbar-View-switch-background) !important;
 		}
@@ -410,7 +410,7 @@ textarea {
 	margin-inline-start: calc(-12px - 2 * var(--urlbar-icon-padding));
 	opacity: 0;
 	transition: .2s ease;
-	
+
 	#urlbar:hover &,
 	&[open] {
 		opacity: 1;
@@ -524,7 +524,7 @@ textarea {
 	height: var(--tab-min-height) !important;
 	margin: 0 !important;
 	border-inline-start: none !important;
-	
+
 	&[movingtab] {
 		padding: 0 !important;
 	}
@@ -820,7 +820,7 @@ menupopup {
 	>menuitem {
 		padding-block: 2px !important;
 	}
-		
+
 	menuseparator {
 		padding-block: 5px !important;
 	}
